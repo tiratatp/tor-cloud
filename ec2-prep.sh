@@ -153,6 +153,9 @@ ORListenAddress 0.0.0.0:9001
 # Start Tor as a bridge.
 BridgeRelay 1
 
+# Enable the Extended ORPort
+ExtORPort auto
+
 # Run obfsproxy
 ServerTransportPlugin obfs2,obfs3 exec /usr/bin/obfsproxy --managed
 ServerTransportListenAddr obfs2 0.0.0.0:52176
@@ -199,6 +202,9 @@ ORListenAddress 0.0.0.0:9001
 # Start Tor as a private obfsproxy bridge
 BridgeRelay 1
 PublishServerDescriptor 0
+
+# Enable the Extended ORPort
+ExtORPort auto
 
 # Run obfsproxy
 ServerTransportPlugin obfs2,obfs3 exec /usr/bin/obfsproxy --managed
