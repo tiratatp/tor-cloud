@@ -1,0 +1,9 @@
+The Tor Cloud Project is a collaboration between Expression Technologies
+and the Tor Project, Inc. The goal of this project is to provide
+bridge-by-default images for Amazon EC2.
+
+All tickets related to this project can be found under the "Tor Cloud"
+component on trac.torproject.org.
+
+The code was hosted by Expression Tech on github.com/inf0/Tor-Cloud/,
+but was moved to gitweb.torproject.org/tor-cloud.git on October 8, 2011.

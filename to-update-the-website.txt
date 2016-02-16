@@ -1,0 +1,11 @@
+To update the Tor Cloud website on https://cloud.torproject.org/:
+
+1. Clone this repository, update files in html/, commit and push. 
+
+2. SSH to staticiforme via perdulce using the following command:
+
+    $ ssh -o ProxyCommand='ssh perdulce.torproject.org -W %h:%p' staticiforme.torproject.org
+
+3. Run the following command to trigger a mirror update:
+
+    $ sudo -u mirroradm static-master-update-component cloud.torproject.org

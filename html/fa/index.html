@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms no-csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" DIR="RTL"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Tor Cloud | ابرِ تور</title>
+	<meta name="description" content="Tor Cloud servers on Amazon EC2">
+	<meta name="viewport" content="width=800">
+
+<!-- Base Styles (Do Not Edit) -->
+	<link rel="stylesheet" href="../css/style.css">
+<!-- Custom Styles -->
+	<link rel="stylesheet" href="../css/custom.css">
+<!-- Nivo Styles (Image Slider) -->
+	<link rel="stylesheet" href="../css/nivo-slider.css">
+	<link rel="stylesheet" href="../nivo-slider/themes/orman/orman.css" type="text/css" media="screen" />
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="https://cloud.torproject.org/favicon.ico">
+
+	<script src="../js/jquery.tools.min.js"></script>
+	<script src="../js/jquery.nivo.slider.pack.js"></script>
+
+	<script src="../js/libs/modernizr-2.0.6.min.js"></script>
+<!-- Prepare the layout for Javascript -->
+	<script type="text/javascript">
+	  $(function(){
+	    $('.setupguide').css('display', 'none');
+	    $('.slider-wrapper').css('display', 'block');
+	    $('#what_is_it').attr('id', 'null');
+	    $('#get_started').attr('id', 'null');
+	    $('#faq').attr('id', 'null');
+	  });
+	</script>
+
+</head>
+<body>
+
+<div id="container">
+	<header>
+	  <div id="hbody">
+	    <nav>
+	      <ul class="tabs nav">
+		<li><a class="current" id="t1" href="#what_is_it">ابرِ تور چیست؟</a></li>
+		<li><a id="t2" href="#get_started">دست به کار شوید!</a></li>
+		<li><a id="t3" href="#faq">پرسشهای متداول (FAQ)</a></li>
+	      </ul>
+	    </nav>
+	    <ul class="nav ">
+		<li><a href="../index.html">English</a></li>
+	   </ul>
+	    <h1 id="logo"><a href="https://cloud.torproject.org/">Tor Cloud</a></h1>
+	  </div>
+	</header>
+	<div class="panes wrap">
+<!-- What it is -->
+	  <div style="display: block;" id="null" class="main" role="main">
+	    <hgroup>
+	      <div class="deco first"></div>
+	      <h2>پل های تور بر روی سرویس ابر آمازون</h2>
+	    </hgroup>
+	<p>پروژه ابرِ تور در محیطی با کاربری آسان به شما امکان ایجاد پل برای کمک به کاربران و دسترسی آنها به اینترنت بدون سانسور را میدهد. با راه اندازی یک پل، شما به پروژه تور پهنای باند هدیه و به بهبود امنیت و سرعت کاربران برای دسترسی به اینترنت کمک میکنید. <a href="https://www.torproject.org/" target="_blank">درباره تور</a> و <a href="https://www.torproject.org/docs/bridges.html.en">پل‌ها بیشتر بدانید »</a>.</p>
+	    <p>این پروژه روی پلتفرم EC2 رایانش ابری آمازون اجرا می شود که میزبان سایت آمازون و بسیاری از سایتهای بزرگ دیگر است.  EC2 آمازون به کاربران اجازه میدهد که ماشین های مجازی و منابع رایانش خود را با شرایط انعطاف پذیر و بصرفه راه اندازی کنند. <a href="http://aws.amazon.com/ec2/" target="_blank">درباره EC2 آمازون بیشتر بدانید »</a></p>
+	<p>تنطیم یک پل تور روی EC2 آمازون راحت است و فقط چند دقیقه از شما زمان می گیرد. ایمیجی با سیستم به روز رسانی خودکار پکیج و  پورت فورواردینگ از قبل تنظیم شده است. پس لازم نیست که شما نگران کار نکردن و یا نگرفتن بسته های به روز رسانی امنیتی تور روی سرور باشید.
+	<a href="https://cloud.torproject.org/#get_started" target="_blank">با ابرِ تور دست به کار شوید »</a></p>
+	    <hgroup>
+	      <div class="deco"></div>
+	      <h2>چقدر هزینه دارد؟</h2>
+	    </hgroup>
+        <p>برای کمک به شروع استفاده مشتریان از رایانش ابری، آمازون ردیف رایگانی را معرفی کرده است. ایمیج های ابرِ تور همگی میکرو اینستنس (micro instance) هستند، مشتریان جدید میتوانند یک میکرو اینستنس یا سرور مجازی کوچک را برای یک سال کامل بصورت رایگان اجرا کنند. همچنین ردیف رایگان AWS شامل ۱۵ گیگابایت پهنای باند خروجی رایگان در ماه میشود</p>
+
+        <p>ایمیج های ابرِ تور به‌نحوی تنظیم شده‌اند که در ماه بیشتر از ۴۰ گیگابایت پهنای باند خروجی استفاده نکنند. ما <a href="https://trac.torproject.org/projects/tor/ticket/3574#comment:4">تخمین زده ایم</a> 
+        مشتریانی که واجد شرایط ردیف استفاده رایگان نباشند، برای یک سرور مجازی قرار گرفته در us-east-1 (ویرجینیا) هزینه ای تا سقف ۳۰ دلار در ماه پرداخت خواهند کرد. </p>
+        <p>مشتریانی که واجد شرایط استفاده از ردیف رایگان هستند اما پل هایی اجرا میکنند که بیشتر از ۱۵ گیگابایت در ماه پهنای باند خروجی استفاده میکند، برای یک سرور مجازی قرار گرفته در us-east-1 (ویرجینیا) هزینه ای تا سقف ۳ دلار در ماه پرداخت خواهند کرد.
+        </p>
+
+        <p>
+        هزینه اجرا و راه اندازی یک پل روی ابر آمازون بستگی به منطقه ای دارد که شما پل را در آن قرار میدهید. 
+         لطفن از <a href="http://aws.amazon.com/free/" target="_blank">http://aws.amazon.com/free/</a>
+        و <a href="http://aws.amazon.com/ec2/pricing/">AWS pricing
+            page</a> برای اطلاعات بیشتر دیدن فرمایید.</p>
+	  </div>
+
+<!-- Get Started -->
+	  <div style="display: none;" id="null" class="main" role="main">
+	    <hgroup>
+	      <div class="deco first"></div>
+	      <h2>ثبت نام کنید</h2>
+	    </hgroup>
+	    <p>قبل از راه اندازی پل،‌ شما نیاز به ثبت نام برای حساب کاربری <i>سرویس وب آمازون </i>(AWS) دارید.
+	    <a class="signup" href="https://aws-portal.amazon.com/gp/aws/developer/registration" target="_blank" border="0">همین حالا ثبت نام کنید!
+</a>
+           <br><br><br>
+    	    به محض فعال شدن حساب کاربری،‌ آمازون برای شما یک ایمیل خواهد فرستاد.
+	    </p>
+    	     <hgroup>
+	     <div class="deco"></div>
+	     <h2>یک منطقه انتخاب کنید</h2>
+	     </hgroup>
+        <p>لطفن برای انتخاب محل قرار گرفتن سرور مجازی ابرِ تور، روی یکی از مناطق زیر کلیک کنید. یک ایمیج از قبل تنظیم شده انتخاب، و شما به کنسول مدیریت AWS هدایت خواهید شد. برای اینکه بدانید این کار <em>چقدر هزینه خواهد داشت</em> از <a href="#what_is_it">صفحه اصلی</a> بازدید کنید.</p>
+    <br>
+
+<!-- bridge URL update start here -->
+        <br><h3>Obfsproxy Bridges (required ports: 22, 443, 52176)</h3>
+        <ul class="region-nav">
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-899426e0" target="_blank">us-east-1<br>Virginia</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchAmi=ami-77220532" target="_blank">us-west-1<br>N. California</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-6e74fa5e" target="_blank">us-west-2<br>Oregon</a></li>
+        <li><a class="region"  href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchAmi=ami-ffd8d98b" target="_blank">eu-west-1<br>Ireland</a></li>
+        <br />
+        <li><a class="region"  href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchAmi=ami-84f74885" target="_blank">ap-northeast-1<br>Tokyo</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchAmi=ami-a26a2af0" target="_blank">ap-southeast-1<br>Singapore</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchAmi=ami-68f72e75" target="_blank">sa-east-1<br>Sao Paulo</a></li>
+        </ul><br /><br />
+        <h3>Private Bridges (required ports: 22, 443)</h3>
+        <ul class="region-nav">
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-0d9e2c64" target="_blank">us-east-1<br>Virginia</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchAmi=ami-df587f9a" target="_blank">us-west-1<br>N. California</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-2475fb14" target="_blank">us-west-2<br>Oregon</a></li>
+        <li><a class="region"  href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchAmi=ami-39dbda4d" target="_blank">eu-west-1<br>Ireland</a></li>
+        <br />
+        <li><a class="region"  href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchAmi=ami-aaf04fab" target="_blank">ap-northeast-1<br>Tokyo</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchAmi=ami-2c6e2e7e" target="_blank">ap-southeast-1<br>Singapore</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchAmi=ami-64e93079" target="_blank">sa-east-1<br>Sao Paulo</a></li>
+        </ul>
+<!-- bridge URL update end here -->
+	    <hgroup>
+	      <div class="deco"></div>
+	      <h2>فرآیند گام به گام</h2>
+	    </hgroup>
+	    <p>بعد از انتخاب منطقه، شما به کنسول مدیریت آمازون هدایت خواهید شد. به سادگی مراحلی که در تصویرهای زیر آمده است را دنبال کنید و در ظرف چند دقیقه پل شما به کار خواهد افتاد.</p>
+
+<!-- Nivo Slider -->
+	    <div class="slider-wrapper theme-orman" style="display: block;">
+	      <div style="position: relative; width: 568px; background: url(&quot;img/tor-1.png&quot;) no-repeat scroll 0% 0% transparent;" id="slider" class="nivoSlider">
+		  <img style="display: none;" src="../img/tor-1.png" alt="" title="روی &quot;Continue&quot; کلیک کنید. هیچ تغییری اینجا لازم نیست.">
+		  <img style="display: none;" src="../img/tor-2.png" alt="" title="روی &quot;Continue&quot; کلیک کنید. هیچ تغییری اینجا لازم نیست.">
+		  <img style="display: none;" src="../img/step-3.png" alt="" title="روی &quot;Continue&quot; کلیک کنید. هیچ تغییری اینجا لازم نیست.">
+		  <img style="display: none;" src="../img/step-4.png" alt="" title="
+&quot;Create a new Key Pair&quot; را انتخاب کنید، برای نام key pair بنویسید &quot;tor-cloud-servers&quot; 
+و روی &quot;Create & Download your Key Pair&quot; کلیک کنید. اگر میخواهید با استفاده از SSH به نمونه خود متصل شوید به این کلید احتیاج خواهید داشت.">
+		  <img style="display: none;" src="../img/step-5.png" alt="" title="
+&quot;Create a new Security Group&quot; را انتخاب کنید و برای اسم و توضیح گروه بنویسید &quot;tor-cloud-servers&quot;. شما به درست کردن دو قانون احتیاج دارید. HTTPS و SSH. از منوی کشویی &quot;Create a new rule&quot; گزینه &quot;HTTPS&quot; را انتخاب کنید و روی &quot;Add Rule&quot; کلیک کنید. همین کار را برای SSH هم انجام دهید و روی &quot;Continue&quot; کلیک کنید.">
+		  <img style="display: none;" src="../img/step-6.png" alt="" title="روی &quot;Launch&quot; کلیک کنید">
+		  <img style="display: none;" src="../img/step-7.png" alt="" title="تبریک! تمام شد!">
+	      <div style="opacity: 0.8;" class="nivo-caption"><p> روی "Continue" کلیک کنید. هیچ تغییری اینجا لازم نیست.</p></div><div style="display: none;" class="nivo-directionNav"><a class="nivo-prevNav">قبلی</a><a class="nivo-nextNav">بعدی</a></div><div class="nivo-controlNav"><a class="nivo-control active" rel="0">۱</a><a class="nivo-control" rel="1">۲</a><a class="nivo-control" rel="2">۳</a><a class="nivo-control" rel="3">۴</a><a class="nivo-control" rel="4">۵</a><a class="nivo-control" rel="5">۶</a><a class="nivo-control" rel="6">۷</a></div></div>
+	    </div>
+
+<!-- Slider Fallback -->
+	    <div style="display: none;" class="setupguide">
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>گاو اول</h2>
+		  <img src="../img/tor-1.png">
+		  <div class="caption">
+		    روی "Continue" کلیک کنید. هیچ تغییری اینجا لازم نیست.
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>گاو دوم</h2>
+		  <img src="../img/tor-2.png">
+		  <div class="caption">
+		    روی "Continue" کلیک کنید. هیچ تغییری اینجا لازم نیست.
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>گام سوم</h2>
+		  <img src="../img/step-3.png">
+		  <div class="caption">
+		    روی "Continue" کلیک کنید. هیچ تغییری اینجا لازم نیست.
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>گام چهارم</h2>
+		  <img src="../img/step-4.png">
+		  <div class="caption">
+		    
+"Create a new Key Pair" را انتخاب کنید، برای نام key pair بنویسید "tor-cloud-servers" 
+و روی "Create & Download your Key Pair" کلیک کنید. اگر میخواهید با استفاده از SSH به نمونه خود متصل شوید به این کلید احتیاج خواهید داشت.
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>گام پنجم</h2>
+		  <img src="../img/step-5.png">
+		  <div class="caption">
+		    
+"Create a new Security Group" را انتخاب کنید و برای اسم و توضیح گروه بنویسید "tor-cloud-servers". شما به درست کردن دو قانون احتیاج دارید. HTTPS و SSH. از منوی کشویی "Create a new rule" گزینه "HTTPS" را انتخاب کنید و روی "Add Rule" کلیک کنید. همین کار را برای SSH هم انجام دهید و روی "Continue" کلیک کنید.		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>گام ششم</h2>
+		  <img src="../img/step-6.png">
+		  <div class="caption">
+		    روی "Launch" کلیک کنید
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>گام هفتم</h2>
+		  <img src="../img/step-7.png">
+		  <div class="caption">
+		   تبریک! تمام شد!
+		  </div>
+	      </div>
+	    </div>
+
+	  </div>
+
+<!-- FAQ -->
+<div style="display: none;" id="null" class="main" role="main">
+	<hgroup>
+	<div class="deco first"></div>
+	<h2>پرسشهای متداول (FAQ)</h2>
+	</hgroup>
+
+        <p><br><b>
+۱- چقدر هزینه خواهد داشت؟
+</b><br><br>
+	هیچ هزینه‌ای از شما برای اجرای یک ایمیج ابرِ تور از طرف Tor Project دریافت نخواهد شد. اگرچه Amazon برای اجرای سرورهای مجازی، <a href="http://aws.amazon.com/ec2/pricing/">مطابق با تعرفه‌شان</a>، این کار را خواهد کرد. برای اطلاعات بیشتر به بخش
+    <em>چقدر هزینه خواهد داشت؟</em> در <a href="#what_is_it">صفحه اول</a> مراجعه کنید.</p>
+
+    <p><b>
+۲- سرور مجازی راه اندازی شد و درحال کارکردن است، قدم بعدی چیست؟</b><br><br>
+   به محض راه افتادن نمونه، شما دیگر لازم نیست که کاری انجام دهید. Tor بصورت یک پل اجرا خواهد شد، تایید میکند که از بیرون قابل دسترسی است، و به مرکز اصلی پل‌ها اعلام موجودیت می‌کند. بعد از آن، آدرس پل شما به کاربران داده خواهد شد.</p>
+
+    <p><b>
+۳- چگونه آدرس پل خودم را پیدا کنم؟</b><br><br>
+    برای پیدا کردن آدرس پل خود، به کنسول مدیریت AWS وارد شوید، نمونه خود را پیدا و روی آن کلیک کنید. نیمه پایینی صفحه اطلاعاتی را از قبیل Public DNS راجع به نمونه‌ای که انتخاب کرده‌اید می‌دهد. اگر کنسول مدیریت AWS میگوید که آدرس Public DNS سرور شما <br>ec2-192-0-2-27.compute-1.amazonaws.com است، پس شما میدانید که آی‌پی آدرس شما 192.0.2.27 خواهد بود. تمام پل‌ها روی پورت 443 اجرا می‌شوند، پس آدرس پل شما 192.0.2.27:443 خواهد بود.</p>
+
+    <p><b>
+۴- چطور چک کنم که پل من درحال اجراست؟</b><br><br>
+    دو راه برای اینکه چک کنید پل شما در حال اجراست وجود دارد. یا می‌توانید وارد نمونه خود شده و /var/log/tor/log را چک کنید، یا با استفاده از Tor به پل خودتان متصل شوید. برای راهنمای چگونگی استفاده از پل‌ها با Tor <a href="https://www.torproject.org/docs/bridges.html.en">سایت پروژه تور</a> بازدید کنید.</p>
+
+	<p><b>
+۵- نمی‌توانم با نام کاربری root وارد شوم، چه ایرادی وجود داره؟</b><br><br>
+	وقتی کلیک راست می‌کنید و connect را انتخاب می‌کنید، AWS به شما پیشنهاد میکند که با نام کاربری root وارد شوید. این اشتباه است. اگر میخواهید که با SSH  به سرور خود متصل شوید باید از نام کاربری ubuntu استفاده کنید.</p>
+
+    <p><b>
+۶- چگونه میتوانم یک نمونه را متوقف یا منحل کنم؟</b><br><br>
+    برای توقف یا انحلال یک نمونه، به کنسول مدیریت AWS وارد شوید، نمونه خود را پیدا و روی آن کلیک راست کنید، شما میتوانید "Stop" و یا "Terminate" را انتخاب کنید. "Stop" نمونه شما را بصورت عادی خاموش (متوقف) میکند و به شما اجازه میدهد که بعدن آن را دوباره راه اندازی کنید. "Terminate" نمونه شما را از روی حساب کاربری‌تان در AWS پاک خواهد کرد.</p>
+
+    <p><b>
+۷- چگونه آدرس آی پی نمونه خود را تغییر دهم؟</b><br><br>
+    برای تغییر آدرس آی پی نمونه خود به کنسول مدیریت AWS وارد شوید، نمونه خود را پیدا، روی آن کلیک راست و گزینه "Stop" را انتخاب کنید. به محض اینکه نمونه بصورت کامل ایستاد و خاموش شد، دوباره روی آن کلیک راست کرده و گزینه "Start" را انتخاب کنید. نمونه شما پس از راه افتادن، آدرس آی پی جدیدی خواهد گرفت.</p> 
+
+	<p><b>
+۸- چه چیزی درون فایل تنظیمات Tor قرار دارد؟</b><br><br>
+	فایل تنظیمات Tor که توسط ایمیج‌ها تنظیم شده‌اند را می‌توانید <a href="https://cloud.torproject.org/torrc.txt">اینجا</a> پیدا کنید.</p>
+	
+	<p><b>
+۹- آیا ایمیج ها، بسته‌های به روزرسانی را بصورت خودکار دریافت و نصب خواهند کرد؟</b><br><br>
+	بله، تمامی ایمیج‌ها با بسته‌ی <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates"><i>unattended-upgrades</i></a> تنظیم شده‌اند. به این معنی که سیستم شما بصورت خودکار بسته‌های به روزرسانی را دریافت و نصب خواهد کرد.</p>
+
+	<p><b>
+۱۰- ممکنه من را از انتشار ایمیج‌های جدید مطلع کنید؟</b><br><br>
+انتشار ایمیج‌های جدید در <a href="https://twitter.com/torproject">توییتر</a>, <a href="https://identi.ca/torproject">identi.ca</a>, <a href="https://blog.torproject.org/">وبلاگ انگلیسی</a> و <a href="https://fa-blog.torproject.org/">فارسی</a> ما، و همچنین در خبرنامه <a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-talk">tor-talk</a> اعلام خواهد شد.</p>
+
+	<p><b>
+۱۱- باگی که با آن مواجه شدم را کجا گزارش کنم؟</b><br><br>
+	اگر فکر میکنید باگی که پیدا کرده‌اید مربوط به ایمیجِ ابرِ توری که ما ارایه کردیم است،‌ لطفن آن را گزارش کنید یا ایمیلی به آدرس help AT rt.torproject.org  بفرستید.</p>
+
+	<p><b>
+۱۲- آیا هیچ کانال IRC وجود دارد که من بتوانم سوالات مربوط به ابرِ تور را بپرسم؟</b><br><br>
+	بله، به سادگی میتوانید به #tor روی irc.oftc.net بپیوندید و سوال خود را بپرسید. شاید کمی زمان ببرد که ما به شما پاسخ بدهیم. پس لطفن صبور باشید.</p>
+
+	<p><b>
+۱۳- سوالی دارم که اینجا پاسخ داده نشده، چه کار کنم؟</b><br><br>
+	لطفن به help AT rt.torproject.org ایمیل بزنید.</p>
+</div>
+
+	</div>
+	
+	<footer dir="ltr">
+	  <div id="hbody">
+	    <p>The Tor Cloud project is developed and maintained by
+	    partnership between <a style="color: rgb(136, 92, 164);" href="http://expressiontech.org/">ExpressionTech</a>
+	    and <a style="color: rgb(136, 92, 164);" href="https://www.torproject.org/">The Tor Project</a>.<br>
+	    "Tor" and the "Onion Logo" are registered trademarks of The Tor Project, Inc.<br>
+	    Ubuntu is a registered trademark of Canonical Ltd.</p>
+
+	    <p>Content on this site is licensed under a Creative Commons
+	    Attribution 3.0 United States License, unless otherwise
+	    noted.</p>
+	  </div>
+	</footer>
+</div> <!--! end of #container -->
+
+<!-- Initialize the Image Slider -->
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({effect:'slideInLeft', manualAdvance: true});
+    });
+</script>
+
+<!-- activate tabs with JavaScript -->
+<script>
+$(function() {
+	$(".tabs").tabs(".panes > .main", { history: true });
+});
+</script>
+
+
+
+</body></html>

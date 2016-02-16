@@ -1,0 +1,461 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Tor Cloud</title>
+	<meta name="description" content="Tor Cloud servers on Amazon EC2">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=800">
+
+<!-- Base Styles (Do Not Edit) -->
+	<link rel="stylesheet" href="css/style.css">
+<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/custom.css">
+<!-- Nivo Styles (Image Slider) -->
+	<link rel="stylesheet" href="css/nivo-slider.css">
+	<link rel="stylesheet" href="nivo-slider/themes/orman/orman.css" type="text/css" media="screen" />
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery.nivo.slider.pack.js"></script>
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+<!-- Prepare the layout for Javascript -->
+	<script type="text/javascript">
+	  $(function(){
+	    $('.setupguide').css('display', 'none');
+	    $('.slider-wrapper').css('display', 'block');
+	    $('#what_is_it').attr('id', 'null');
+	    $('#get_started').attr('id', 'null');
+	    $('#faq').attr('id', 'null');
+	  });
+	</script>
+
+</head>
+<body>
+
+<div id="container">
+	<header>
+	  <div id="hbody">
+<!--
+	    <nav>
+	      <ul class="tabs nav">
+		<li><a id="t1" href="#what_is_it">What Is It?</a></li>
+		<li><a id="t2" href="#get_started">Get Started!</a></li>
+		<li><a id="t3" href="#faq">FAQ</a></li>
+	      </ul>
+-->
+<!--	    </nav>
+            <ul class="nav ">
+                <li><a href="fa/index.html">فارسی</a></li>
+           </ul> -->
+	    <h1 id="logo"><a href="/">Tor Cloud</a></h1>
+	  </div>
+	</header>
+	<div class="panes wrap">
+
+<!-- What it is -->
+	  <div id="what_is_it" class="main" role="main">
+	    <hgroup>
+	      <div class="deco first"></div>
+	      <h2>Tor bridges in the Amazon cloud</h2>
+	    </hgroup>
+
+<p>As of May 8, 2015, the <a href="https://cloud.torproject.org/">Tor Cloud project</a> has been discontinued.</p>
+
+<p>The Tor Cloud project gave people a user-friendly way of deploying bridges on the Amazon EC2 cloud computing platform to help users access an uncensored Internet. By setting up a bridge, they would donate bandwidth to the Tor network and help improve the safety and speed at which users can access the Internet.</p>
+
+<p>The main reason for discontinuing Tor Cloud is the fact that software requires maintenance, and Tor Cloud is no exception.  There is at least one <a href="https://trac.torproject.org/projects/tor/ticket/14073">major bug in the Tor Cloud image</a> that makes it completely dysfunctional (meaning that users could not use this particular service to access the Internet), and there are <a href="https://trac.torproject.org/projects/tor/query?status=!closed&component=Tor+Cloud">over a dozen other bugs</a>, at least one of them of highest priority.  Probably as a result of these bugs, the number of Tor Cloud bridges has <a href="https://metrics.torproject.org/cloudbridges.html?graph=cloudbridges&start=2011-04-27&end=2015-04-27">steadily declined since early 2014</a>.</p>
+
+<p>We have tried to find a new maintainer for Tor Cloud for months, but without success.  There have been offers to send us patches, but we couldn't find a Tor person to review and approve them.  We encourage everyone who stepped up to start their own cloud bridges project under another name ("<a href="https://www.torproject.org/docs/trademark-faq.html.en">Onion Cloud</a>"?), possibly forking the <a href="https://gitweb.torproject.org/tor-cloud.git/">existing Tor Cloud code</a> that will remain available.  Tor Cloud is still a good idea, it just needs somebody to implement it.</p>
+
+<p>Or maybe this is a good opportunity for the community to further look into other approaches for providing an easy-to-deploy bridge or relay, like <a href="https://github.com/david415/ansible-tor">Ansible Tor</a> or <a href="https://github.com/glamrock/cirrus">cirrus</a>.</p>
+
+<p>If people still want to help users access an uncensored Internet, there remain <a href="https://www.torproject.org/getinvolved/volunteer.html.en">plenty of ways to help</a>.  For example, it's still possible to spin up an instance on Amazon EC2 or any other cloud computing platform and install a Tor bridge manually.  Or people can donate to organizations that run Tor relays and bridges like <a href="https://www.torservers.net/">Torservers.net</a> or their <a href="https://www.torservers.net/partners.html">partner organizations</a>.</p>
+
+<p>Note that discontinuing the Tor Cloud project has no effect on existing Tor Cloud instances.  Whenever one of those instances was started, a template of the operating system and settings was copied, and removing the template has no effect on the copies.</p>
+
+<p>Sorry for any inconvenience caused by this.</p>
+
+<!--
+	<p>The Tor Cloud project gives you a user-friendly way of deploying
+	bridges to help users access an uncensored Internet. By setting up a
+	bridge, you donate bandwidth to the Tor network and help improve the
+	safety and speed at which users can access the Internet. <a
+		href="https://www.torproject.org"
+		target="_blank">Learn more about Tor</a> and <a
+        href="https://www.torproject.org/docs/bridges.html.en">bridges &raquo;</a>.</p>
+	    <p>This project runs on the Amazon EC2 cloud computing
+	    platform, which powers Amazon.com and other major websites. Amazon
+	    EC2 allows users to launch their own virtual machines and computing
+	    resources with flexible and cost-effective terms. <a
+		    href="http://aws.amazon.com/ec2/"
+	    target="_blank">Learn more about Amazon EC2 &raquo;</a></p>
+	<p>Setting up a Tor bridge on Amazon EC2 is simple and will only take
+	you a couple of minutes. The images have been configured with automatic
+	package updates and port forwarding, so you do not have to worry about
+	Tor not working or the server not getting security updates.
+	<a href="https://cloud.torproject.org/#get_started" target="_blank">Get
+		started with Tor Cloud &raquo;</a></p>
+	    <hgroup>
+	      <div class="deco"></div>
+	      <h2>How much does it cost?</h2>
+	    </hgroup>
+        <p>To help new customers get started in the cloud, Amazon has
+        introduced a free usage tier. The Tor Cloud images are all
+        micro instances, and new customers can run a micro instance for 
+        free for a whole year. The AWS free usage tier also includes 15
+        GB of bandwidth out per month.</p>
+
+        <p>The Tor Cloud images have been configured to use no more than
+        40 GB of bandwidth out per month. We have <a
+            href="https://trac.torproject.org/projects/tor/ticket/5358#comment:1">estimated</a> 
+        that customers who do not qualify for the free usage tier will 
+        pay up to $20 a month for an instance located in us-east-1
+        (Virginia). </p>
+        <p>Customers who qualify for the free usage
+        tier, but who run bridges that use more than 15 GB of bandwidth
+        out per month, will pay up to $3 per month for an instance
+        located in us-east-1 (Virginia).
+        </p>
+
+        <p>
+        The cost of running a bridge in the Amazon cloud depends on the region you put it in. 
+        Please see <a href="http://aws.amazon.com/free/"target="_blank">http://aws.amazon.com/free/</a>
+        and the <a href="http://aws.amazon.com/ec2/pricing/">AWS pricing
+            page</a> for more information.</p>
+	  </div>
+-->
+
+<!-- Get Started -->
+<!--
+	  <div id="get_started" class="main" role="main">
+	    <hgroup>
+	      <div class="deco first"></div>
+	      <h2>Sign up</h2>
+	    </hgroup>
+	    <p>Before you can set up a bridge, you need to sign up for
+	    an <i>Amazon <br> Web Services (AWS)</i> account.
+	    <a class="signup"
+	    href="https://aws-portal.amazon.com/gp/aws/developer/registration"
+	    target="_blank" border="0"> Sign Up Now!</a>
+           <br><br><br>
+    	    Amazon will send you an email once your account has
+	    been activated.
+	    </p>
+    	     <hgroup>
+	     <div class="deco"></div>
+	     <h2>Select a region</h2>
+	     </hgroup>
+        <p>Please click on one of the regions below to choose where you
+        want to launch your Tor Cloud instance. A pre-configured image
+        will be selected, and you will be directed to the AWS Management
+        Console. See <em>How much does             it cost?</em> on the <a
+            href="https://cloud.torproject.org/">front page</a> for
+        information about pricing.</p>
+
+        <br><h3>Obfsproxy Bridges (required ports: 22, 443, 40872, 52176)</h3>
+        <ul class="region-nav">
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-4a7c1a23" target="_blank">us-east-1<br>Virginia</a></li>
+-->
+<!--
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchAmi=ami-18ecc05d" target="_blank">us-west-1<br>N. California</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-d09403e0" target="_blank">us-west-2<br>Oregon</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchAmi=ami-20011554" target="_blank">eu-west-1<br>Ireland</a></li>
+        <br />
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchAmi=ami-061c9e07" target="_blank">ap-northeast-1<br>Tokyo</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchAmi=ami-621c5330" target="_blank">ap-southeast-1<br>Singapore</a></li> 
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchAmi=ami-69d30974" target="_blank">sa-east-1<br>Sao Paulo</a></li>
+    <br / >
+    <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-2#launchAmi=ami-08920232" target="_blank">ap-southeast-2<br>Sydney</a></li>
+-->
+<!--
+        </ul><br /><br />
+        <h3>Private Bridges (required ports: 22, 443, 40872, 52176)</h3>
+        <ul class="region-nav">
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-567c1a3f" target="_blank">us-east-1<br>Virginia</a></li>
+-->
+<!--
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchAmi=ami-1aecc05f" target="_blank">us-west-1<br>N. California</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-d29403e2" target="_blank">us-west-2<br>Oregon</a></li>
+        <li><a class="region"  href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchAmi=ami-22011556" target="_blank">eu-west-1<br>Ireland</a></li>
+        <br />
+        <li><a class="region"  href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchAmi=ami-0a1c9e0b" target="_blank">ap-northeast-1<br>Tokyo</a></li>
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchAmi=ami-601c5332" target="_blank">ap-southeast-1<br>Singapore</a></li> 
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchAmi=ami-6bd30976" target="_blank">sa-east-1<br>Sao Paulo</a></li>
+    <br />
+        <li><a class="region" href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-2#launchAmi=ami-0e920234" target="_blank">ap-southeast-2<br>Sydney</a></li> 
+-->
+<!--
+        </ul>
+-->
+
+
+<!--
+	    <hgroup>
+	      <div class="deco"></div>
+	      <h2>Step by step process</h2>
+	    </hgroup>
+	    <p>After selecting the region, you will be redirected to Amazon's
+	    management console. Simply follow the steps as illustrated below,
+	    and your bridge will up and running in just a couple of
+	    minutes:</p>
+-->
+
+<!-- Nivo Slider -->
+<!--
+	    <div class='slider-wrapper theme-orman' style="display:none;">
+	      <div id='slider' class='nivoSlider'>
+		  <img src="img/tor-1.png" alt="" title="Click
+		  &quot;Continue&quot;. (No changes needed here.)"/>
+		  <img src="img/tor-2.png" alt="" title="Click
+		  &quot;Continue&quot;. (No changes needed here.)"/>
+		  <img src="img/step-3.png" alt="" title="Click
+		  &quot;Continue&quot;. (No changes needed here.)"/>
+		  <img src="img/step-4.png" alt="" title="Select
+		  &quot;Create a new Key Pair&quot;, type
+		  &quot;tor-cloud-servers&quot; for key pair name, and
+		  click &quot;Create & Download your Key Pair&quot;. You will
+		  need the key pair if you want to connect to your instance
+		  using SSH."/>
+		  <img src="img/step-5.png" alt="" title="Select
+		  &quot;Create a new Security Group&quot;,
+		  type &quot;tor-cloud-servers&quot; for Group
+		  Name and Group Description. You need to create four
+		  rules; SSH (22), HTTPS (443), 40872, and 52176 . Select &quot;HTTPS&quot;
+		  from the &quot;Create a new rule&quot; dropdown
+		  and click on &quot;Add Rule&quot;. Do the same for
+          SSH. Select &quot;Custom TCP rule&quot; and add port 40872, do the
+          same with 52176. Then click
+		  &quot;Continue&quot;."/>
+		  <img src="img/step-6.png" alt="" title="Click
+		  &quot;Launch&quot;."/>
+		  <img src="img/step-7.png" alt="" title="You're
+		  done! Congratulations!"/>
+	      </div>
+	    </div>
+-->
+
+<!-- Slider Fallback -->
+<!--
+	    <div class="setupguide">
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>Step 1</h2>
+		  <img src="img/tor-1.png"/>
+		  <div class="caption">
+		    Click "Continue". (No changes needed here.)
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>Step 2</h2>
+		  <img src="img/tor-2.png"/>
+		  <div class="caption">
+		    Click "Continue". (No changes needed here.)
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>Step 3</h2>
+		  <img src="img/step-3.png"/>
+		  <div class="caption">
+		    Click "Continue". (No changes needed here.)
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>Step 4</h2>
+		  <img src="img/step-4.png"/>
+		  <div class="caption">
+		    Select "Create a new Key Pair", type "tor-cloud-servers" for key pair name, and click "Create & Download your Key Pair". You will need the key pair if you want to connect to your instance using SSH.
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>Step 5</h2>
+		  <img src="img/step-5.png"/>
+		  <div class="caption">
+              Select "Create a new Security Group", type
+              "tor-cloud-servers" for Group Name and Group Description.
+              You need to create four rules; SSH (22), HTTPS (443),
+              40872, and 52176. Select "SSH" from the "Create a new
+              rule" dropdown and click on "Add Rule". Do the same for
+              HTTPS. Select "Custom TCP rule" and add port 40872, do the
+              same with port 52176. Then click "Continue".      
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>Step 6</h2>
+		  <img src="img/step-6.png"/>
+		  <div class="caption">
+		    Click "Launch."
+		  </div>
+	      </div>
+
+	      <div class="step">
+		  <div class="deco"></div>
+		  <h2>Step 7</h2>
+		  <img src="img/step-7.png"/>
+		  <div class="caption">
+		    You're done! Congratulations!
+		  </div>
+	      </div>
+	    </div>
+
+	  </div>
+-->
+
+<!-- FAQ -->
+<!--
+<div id="faq" class="main" role="main">
+	<hgroup>
+	<div class="deco first"></div>
+	<h2>Frequently Asked Questions (FAQ)</h2>
+	</hgroup>
+
+    <p><b>0. Private bridge or obfsproxy bridge?</b><br>
+    If you set up a private bridge, your bridge will not tell the bridge
+    authority that it exists. You will have to manually give out your bridge
+    address to users.
+    </p>
+
+        <p><b>1. How much does it cost?</b><br>
+    	There is no fee charged by the Tor Project, Inc for you to run a
+        Tor Cloud image. Amazon does, however, charge instances according to their <a
+        href="http://aws.amazon.com/ec2/pricing/">pricing</a>. See
+    <em>How much does it cost?</em> on the <a
+        href="https://cloud.torproject.org/">front page</a> for more
+    information.</p>
+
+    <p><b>2. The instance is running, what's next?</b><br>
+    You should not have to do anything once the instance is up and
+    running. Tor will start up as a bridge and confirm that it is reachable
+    from the outside. If you have set up an obfsproxy bridge, then it will also
+    tell the bridge authority that it exists, and the address for your
+    bridge will be given out to users.</p>
+
+    <p><b>3. How do I find the address of my bridge?</b><br>
+    To find the address of your bridge, log on to the AWS Management
+    Console, find your instance, and click on it. The bottom half of the
+    page will show some details about the instance you have selected,
+    including <em>Public DNS</em>. If the AWS Management Console says
+    that the <em>Public DNS</em> for your instance is
+    <em>ec2-192-0-2-27.compute-1.amazonaws.com</em>, then you know that the IP
+    address is <em>192.0.2.27</em>. All of the bridges run on port 443, so the
+    address of your bridge is <em>192.0.2.27:443</em>. Obfsproxy bridges will
+    also run on port 52176.</p>
+
+    <p><b>4. How can I check if my bridge is running?</b><br>
+    There are two ways you can check to see if your bridge is running;
+    you can either log on to the instance and check
+    <em>/var/log/tor/log</em>, or you can use Tor and connect to your
+    own bridge. For instructions on how to use a bridge with Tor, see
+    the <a
+        href="https://www.torproject.org/docs/bridges.html.en">Tor
+        Project website</a>.</p>
+
+	<p><b>5. I can't connect as user <i>root</i>, what's wrong?</b><br>
+	When you right-click and choose <i>connect</i>, AWS will suggest that
+	you use <i>root</i> as the username. This is wrong. You need to use
+	<i>ubuntu</i> as the username if you wish to connect to your server via
+	SSH.</p>
+
+    <p><b>6. How do I stop or terminate the instance?</b><br>
+    To stop or terminate the instance, log on to the AWS Management
+    Console, find your instance, right click on it and choose either
+    "Stop" or "Terminate". "Stop" will just shutdown the instance as
+    normal and will allow you to start it up again later. "Terminate"
+    will delete the instance from your AWS account.</p>
+
+    <p><b>7. How do I change the IP address of my instance?</b><br>
+    To change the IP address of your instance, log on to the AWS
+    Management Console, find your instance, right click on it and choose
+    "Stop". Once the instance has shut down completely, right click on
+    it again and choose "Start". The instance will be assigned a new IP
+    address when it starts up again.</p> 
+
+    <p><b>8. What is arm and how do I use it?</b><br>
+    The <em>anonymizing relay monitor (arm)</em> is a terminal status
+    monitor for Tor. This works much like <em>top</em> does for system
+    usage, providing real time statistics for bandwidth, cpu, memory
+    usage, current Tor configuration, connection details etc. To run
+    arm, connect to your instance with SSH and run <em>sudo -u
+        debian-tor arm</em>. You can read more about arm <a
+        href="http://www.atagar.com/arm/">here</a>.</p>
+
+	<p><b>9. What's in the Tor configuration file?</b><br>
+    Here's the configuration for an <a
+    href="https://cloud.torproject.org/obfstorrc.txt">obfsproxy bridge</a> and a <a
+    href="https://cloud.torproject.org/privtorrc.txt">private bridge</a>. The following packages are installed when you start a Tor Cloud instance: tor, tor-geoipdb, tor-arm, deb.torproject.org-keyring, obfsproxy.
+    </p>
+
+	<p><b>10. Will the images automatically download and install package updates?</b><br>
+	Yes, the images have all been configured with the <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates"><i>unattended-upgrades</i></a> package. This means that your system will automatically download and install updates.</p>
+
+	<p><b>11. Will you let me know when you publish new images?</b><br>
+	New cloud images will be announced on <a href="https://twitter.com/torproject">Twitter</a>, <a href="https://identi.ca/torproject">identi.ca</a>, <a href="https://blog.torproject.org">our blog</a> and on the <a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-talk">tor-talk</a> mailing list.</p>
+
+	<p><b>12. Where do I report a bug I am encountering?</b><br>
+	If you think the bug you have found is specific to the Tor Cloud
+	images we provide, please <a href="https://trac.torproject.org">file a bug</a> or
+	send an email to <i>help AT rt.torproject.org</i>.</p>
+
+	<p><b>13. Is there an IRC channel where I can ask about Tor Cloud?</b><br>
+	Yes, simply join #tor on irc.oftc.net and ask your question. It may take a while before we get back to you, so please be patient.</p>
+
+	<p><b>14. I have a question that is not answered here, what do I do?</b><br>
+	Please send an email to <i>help AT rt.torproject.org</i>.</p>
+</div>
+
+-->
+	</div>
+	
+	<footer>
+	  <div id="hbody">
+	    <p>The Tor Cloud project was developed and maintained by
+	    partnership between <a style="color:#885CA4"
+		    href="http://expressiontech.org">ExpressionTech</a>
+	    and <a style="color:#885CA4" href="https://www.torproject.org">The Tor Project</a>.<br />
+	    "Tor" and the "Onion Logo" are registered trademarks of The Tor Project, Inc.<br />
+	    Ubuntu is a registered trademark of Canonical Ltd.</p>
+
+	    <p>Content on this site is licensed under a Creative Commons
+	    Attribution 3.0 United States License, unless otherwise
+	    noted.</p>
+	  </div>
+	</footer>
+</div> <!--! end of #container -->
+
+<!-- Initialize the Image Slider -->
+<!--
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({effect:'slideInLeft', manualAdvance: true});
+    });
+</script>
+-->
+
+<!-- activate tabs with JavaScript -->
+<!--
+<script>
+$(function() {
+	$(".tabs").tabs(".panes > .main", { history: true });
+});
+</script>
+-->
+
+</body>
+</html>
